@@ -3,6 +3,10 @@
       {{quote.quoteName}}
       <br>
     <button (click)='toggleQuote(i)' >Show</button>
+    <div *ngIf='quote.showQuoteDetails'>
+       <app-quote-detail  [quote]='quote' ></app-quote-detail>
+    </div>
    
   </ul>
+  <app-quote-form></app-quote-form>
 </div>
