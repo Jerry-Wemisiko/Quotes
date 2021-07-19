@@ -1,1 +1,8 @@
-
+<div class="container ">
+  <ul class="list"  *ngFor='let quote of quotes;let i=index'>
+      {{quote.quoteName}}
+      <br>
+    <button (click)='toggleQuote(i)' >Show</button>
+   
+  </ul>
+</div>

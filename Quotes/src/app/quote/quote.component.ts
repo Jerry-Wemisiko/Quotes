@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Quote } from '../quote';
 
 
+
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',
@@ -10,10 +11,22 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[]=[
-    new Quote("Wake up nigga Wake UP","Jerry","Wemisiko",new Date(2021,3,10))
-    new Quote("Wake up nigga Wake UP","Jerry","Wemisiko",new Date(2021,3,10))
-    new Quote("Wake up nigga Wake UP","Jerry","Wemisiko",new Date(2021,3,10))
+    new Quote(1,'You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose.','Dr. Seuss','Jerry' ,new Date(2021,3,10)),
+    new Quote(1,'You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose.','Dr. Seuss','Jerry' ,new Date(2021,3,10)),
+    new Quote(1,'You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose.','Dr. Seuss','Jerry' ,new Date(2021,3,10)),
   ]
+
+  toggleQuote(index:any){
+    this.quotes[index].showQuoteDetails=!this.quotes[index].showQuoteDetails
+  }
+
+  addQuote(quote:Quote){
+    const quotesLength =this.quotes.length;
+    quote.id = quotesLength +1;
+    this.quotes.push(quote);
+
+
+  }
   constructor() { }
 
   ngOnInit(): void {
