@@ -20,7 +20,7 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].showQuoteDetails=!this.quotes[index].showQuoteDetails
   }
   
-  addQuote(quote:Quote){
+  addNewQuote(quote:Quote){
     const quotesLength =this.quotes.length;
     quote.id = quotesLength +1;
     this.quotes.push(quote);
