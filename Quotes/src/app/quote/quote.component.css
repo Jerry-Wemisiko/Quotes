@@ -1,4 +1,8 @@
+.quo{
+    display: flex;
+    flex-direction: row;
 
+}
 .list{
     list-style: none;
     width: 300px;
@@ -8,4 +12,13 @@
     border: 1px black;
     border-radius: 8px;
     background-color: darkgreen;
+    padding: 10px;
+}
+.q{
+    /* display: flex; */
+    align-content: space-around;
+    padding: 10px;
+    font-family: cursive;
+    font-style: oblique;
+    
 }

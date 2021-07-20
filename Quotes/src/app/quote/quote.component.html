@@ -1,6 +1,10 @@
-<div class="container ">
+<div class="container quo ">
   <ul class="list"  *ngFor='let quote of quotes;let i=index'>
+    <div class="q">
+      <p>{{quote.id}}</p>
       <li appHighlight='color' >{{quote.quoteName}}</li>
+    </div>
+      
       <br>
     <button (click)='toggleQuote(i)' >Show</button>
     <div *ngIf='quote.showQuoteDetails'>
