@@ -10,6 +10,7 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { HighlightDirective } from './highlight.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TimepassedPipe } from './timepassed.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     QuoteComponent,
     QuoteDetailComponent,
     QuoteFormComponent,
-    HighlightDirective
+    HighlightDirective,
+    TimepassedPipe
     
   ],
   imports: [
