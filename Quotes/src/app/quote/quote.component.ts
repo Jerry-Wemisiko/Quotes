@@ -22,14 +22,14 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].showQuoteDetails=!this.quotes[index].showQuoteDetails
   }
   
-  upvoteFunc(index){
+  upvoteFunc(index:any){
     var up=this.quotes[index].upvote+1;
     this.quotes[index].upvote=up;
     
 }
 
 
-downvoteFunc(index){
+downvoteFunc(index:any){
   var down=this.quotes[index].downvote+1;
   this.quotes[index].downvote=down;
 

@@ -1,9 +1,14 @@
 <mat-card>
     <mat-card-content>
-      <p>{{quote.postedBy}}</p>
-      <p>{{quote.datePosted}}</p>
+      <p><small class="text-muted">Author: </small>{{quote.author}}</p>
+      <p><small class="text-muted">Posted by: </small>{{quote.postedBy}}</p>
+      <p><small class="text-muted">Date: </small>{{quote.datePosted}}</p>
+      <div class="vote">
+          <p>{{quote.upvote}}</p>
+          <p>{{quote.downvote}}</p>
+      </div>
     </mat-card-content>
     <mat-card-actions>
-        <button color="primary" (click)='quoteDelete(true)' ></button>
+        <button color="primary" (click)='quoteDelete(true)' >Delete</button>
     </mat-card-actions>
 </mat-card>
