@@ -10,7 +10,7 @@
     </div>
       
       <br>
-    <button (click)='toggleQuote(i)' >Show</button>
+    <button class="show" (click)='toggleQuote(i)' >Show</button>
     <div *ngIf='quote.showQuoteDetails'>
       <p><i class="far fa-thumbs-up    " (click)='upvoteFunc(i)' ></i>  <i style="text-indent: 2em;" (click)='downvoteFunc(i)' class="far fa-thumbs-down    "></i></p>
        <app-quote-detail  [quote]='quote' (isTimeCountOver)='deleteQuote($event,i)'></app-quote-detail>
