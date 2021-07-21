@@ -13,9 +13,9 @@ export class QuoteComponent implements OnInit {
   constructor() { }
 
   quotes:Quote[]=[
-    new Quote(1,'You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose.','Dr. Seuss','Jerry' ,new Date(2021,3,10),10,20),
-    new Quote(2,'You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose.','Dr. Seuss','Jerry' ,new Date(2021,3,10),50,10),
-    new Quote(3,'You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose.','Dr. Seuss','Jerry' ,new Date(2021,3,10),40,20),
+    new Quote(1,'Great companies are built on great products.','Elon Musk','Riri' ,new Date(2021,3,10),10,20),
+    new Quote(2,'The greatest glory in living lies not in never falling, but in rising every time we fall.','Nelson Mandela','Skyles' ,new Date(2021,3,10),50,10),
+    new Quote(3,'Stay Hungry,Stay foolish','Steve Jobs','Jerry' ,new Date(2021,3,10),40,20),
   ]
 
   toggleQuote(index:any){
