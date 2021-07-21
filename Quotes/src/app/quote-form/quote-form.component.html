@@ -1,4 +1,5 @@
 <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+    <h3>Quote Form</h3>
     <label for="quote" id="quote">Quote</label>
     <input type="text" placeholder="Enter your quote" [(ngModel)]='newQuote.quoteName' name="quoteName" #name='ngModel' class="required">
     <label for="author" id="author">Author</label>
